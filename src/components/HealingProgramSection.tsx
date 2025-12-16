@@ -28,7 +28,7 @@ export default function HealingProgramSection() {
             <p className="text-accent text-3xl font-marcellus mb-8">Forest Healing</p>
             
             <Link 
-              href="/program/forest"
+              href="/programs"
               className="px-8 py-3 rounded-full border border-white/80 hover:bg-white hover:text-black transition-all duration-300 font-gowun-batang text-sm tracking-widest"
             >
               자세히 보기
@@ -55,7 +55,7 @@ export default function HealingProgramSection() {
             <p className="text-accent text-3xl font-marcellus mb-8">Tea Therapy</p>
             
             <Link 
-              href="/program/tea"
+              href="/programs"
               className="px-8 py-3 rounded-full border border-white/80 hover:bg-white hover:text-black transition-all duration-300 font-gowun-batang text-sm tracking-widest"
             >
               자세히 보기
