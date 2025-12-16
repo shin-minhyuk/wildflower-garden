@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { MapPin, Navigation } from "lucide-react";
+import KakaoMap from "./KakaoMap";
 
 export default function LocationGuideSection() {
   const address = "경기도 양평군 양평읍 경강로 1698";
@@ -11,7 +12,7 @@ export default function LocationGuideSection() {
   return (
     <section className="w-full py-24 bg-white font-gowun-batang text-[#2E5C3C]">
       <div className="container mx-auto px-4 max-w-7xl">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-12">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           
           {/* Text Content */}
           <div className="flex-1 space-y-8 text-center md:text-left">
@@ -56,40 +57,9 @@ export default function LocationGuideSection() {
             </div>
           </div>
 
-          {/* Map Visual Placeholder / Minimap */}
-          <div className="flex-1 w-full h-[400px] border rounded-[40px] overflow-hidden shadow-2xl relative bg-[#F4F1EA] group">
-            {/* We can use an iframe for Google Maps embed or just a static interaction hint since exact embed might need API key or specific embed URL format which is free but sometimes requires key for styled maps. 
-                Let's use a standard iframe embed for better UX if possible, or a placeholder if I want to be safe. 
-                Google Maps Embed API is free for basic usage. 
-            */}
-            <iframe
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              loading="lazy"
-              allowFullScreen
-              referrerPolicy="no-referrer-when-downgrade"
-              src={`https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=${encodeURIComponent(address)}`}
-              className="grayscale group-hover:grayscale-0 transition-all duration-700"
-            >
-            </iframe>
-            {/* Fallback visual because I don't have an API key. I will use a simple generic map pattern or just the text/buttons. 
-                Wait, standard iframe `src="https://maps.google.com/maps?q=${encodeURIComponent(address)}&t=&z=15&ie=UTF8&iwloc=&output=embed"` works without key for simple embedding mostly, or at least used to.
-                Let's try the simple embed URL.
-            */}
-            <div className="absolute inset-0 flex items-center justify-center bg-[#F4F1EA] pointer-events-none z-0">
-               <span className="text-[#5D7B6F] opacity-20 text-6xl font-marcellus">MAP</span>
-            </div>
-             <iframe
-              title="Location Map"
-              width="100%"
-              height="100%"
-              style={{ border: 0, position: 'relative', zIndex: 10 }}
-              loading="lazy"
-              allowFullScreen
-              src={`https://maps.google.com/maps?q=${encodeURIComponent(address)}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
-              className="w-full h-full grayscale hover:grayscale-0 transition-all duration-500"
-            />
+          {/* Map Visual / Minimap */}
+          <div className="flex-1 w-full h-[500px] border rounded-[20px] overflow-hidden shadow-2xl relative bg-[#F4F1EA] group">
+             <KakaoMap />
           </div>
         </div>
       </div>
