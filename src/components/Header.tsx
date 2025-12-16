@@ -67,7 +67,7 @@ export default function Header() {
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >
-          {isMobileMenuOpen ? <X className="text-primary hover:text-primary w-6 h-6" /> : <Menu className="text-primary hover:text-primary w-6 h-6" />}
+          {isMobileMenuOpen ? <X className="text-accent hover:text-accent w-6 h-6" /> : <Menu className="text-accent hover:text-accent w-6 h-6" />}
         </button>
       </div>
 
@@ -89,7 +89,7 @@ export default function Header() {
             ))}
              <Link
                 href="/reservation"
-                className="flex items-center justify-center p-3 mt-2 text-white bg-primary rounded-lg font-medium shadow-sm"
+                className="flex items-center justify-center p-3 mt-2 text-white bg-accent rounded-lg font-medium shadow-sm"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 예약하기
