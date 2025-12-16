@@ -4,11 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function HeroSection() {
+  /* New Nav Items matching Header */
   const navItems = [
-    { name: "갤러리", href: "/gallery" },
-    { name: "인스타그램", href: "https://www.instagram.com/wildflowergarden_yp" },
-    { name: "예약하기", href: "/reservation" },
-    { name: "프로그램 보기", href: "/#programs" },
+    { name: "소개", href: "/intro", external: false },
+    { name: "갤러리", href: "/gallery", external: false },
+    { name: "프로그램 보기", href: "/#programs", external: false },
+    { name: "예약하기", href: "/reservation", external: false },
+    { name: "인스타그램", href: "https://www.instagram.com/wildflowergarden_yp", external: true },
   ];
 
   return (
@@ -36,7 +38,7 @@ export default function HeroSection() {
       </div>
 
       {/* Embedded Navigation (Hero Nav) */}
-      <div className="relative z-10 w-full pt-16 flex flex-col items-center animate-in fade-in slide-in-from-top-5 duration-1000">
+      <div className="hidden md:flex relative z-10 w-full pt-16 flex-col items-center animate-in fade-in slide-in-from-top-5 duration-1000">
         <Link href="/" className="mb-8 hover:opacity-90 transition-opacity">
           <Image 
             src="/image/garden_logo4.png" 
@@ -47,14 +49,18 @@ export default function HeroSection() {
             className="w-auto h-auto" // Maintain aspect ratio
           />
         </Link>
-        <nav className="flex items-center font-gowun-batang">
+        <nav className="flex items-center space-x-10 font-gowun-batang">
            {navItems.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className="flex items-center text-xl text- px-3 py-2 font-black text-white/90 hover:text-white transition-colors duration-300 uppercase tracking-wider"
+              target={item.external ? "_blank" : undefined}
+              rel={item.external ? "noopener noreferrer" : undefined}
+              className="relative group flex items-center text-xl px-2 py-2 font-bold text-white/90 transition-colors duration-300"
             >
-              <span>{item.name}</span>
+              <span className="relative z-10">{item.name}</span>
+              {/* Hover Glow/Underline Effect */}
+              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#ee9ca7] transition-all duration-300 group-hover:w-full shadow-[0_0_10px_#ee9ca7]"></span>
             </Link>
           ))}
         </nav>

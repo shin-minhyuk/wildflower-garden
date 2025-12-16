@@ -17,52 +17,48 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  /* New Nav Items: 소개, 갤러리, 프로그램 보기, 예약하기, 인스타그램 */
   const navItems = [
-    { name: "갤러리", href: "/gallery", icon: <ImageIcon className="w-4 h-4 mr-1" /> },
-    { name: "인스타그램", href: "https://www.instagram.com/wildflowergarden_yp", icon: <Instagram className="w-4 h-4 mr-1" />, external: true },
+    { name: "소개", href: "/intro", external: false },
+    { name: "갤러리", href: "/gallery", external: false },
+    { name: "프로그램 보기", href: "/#programs", external: false },
+    { name: "인스타그램", href: "https://www.instagram.com/wildflowergarden_yp", external: true },
   ];
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 font-gowun-batang z-50 transition-all duration-500 transform ${
-        isScrolled || isMobileMenuOpen
-          ? "translate-y-0 bg-black/30 backdrop-blur-md shadow-sm py-4"
-          : "-translate-y-full py-5 border-b border-transparent"
+      className={`fixed top-0 left-0 right-0 font-gowun-batang z-50 bg-black/30 backdrop-blur-md py-4 transition-all duration-500 transform ${
+        isScrolled
+          ? "translate-y-0"
+          : "md:-translate-y-full md:bg-transparent md:backdrop-blur-none" // 데스크탑 일때만 y-full 숨기고 모바일 일때는 항상 보임
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
         <Link 
           href="/" 
-          className={`text-xl md:text-2xl font-bold tracking-tight transition-colors duration-300 ${
-            isScrolled || isMobileMenuOpen ? "text-primary" : "text-primary"
-          }`}
+            className="text-xl md:text-2xl font-bold tracking-tight transition-colors duration-300 text-primary"
         >
           <Image src="/image/garden_logo5.png" alt="logo" width={200} height={50} />
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8">
+        <nav className="hidden md:flex items-center space-x-12">
           {navItems.map((item) => (
             <Link
               key={item.name}
               href={item.href}
               target={item.external ? "_blank" : undefined}
               rel={item.external ? "noopener noreferrer" : undefined}
-              className={`flex items-center text-sm font-medium transition-colors duration-300 ${
-                isScrolled ? "text-white hover:text-primary" : "text-white hover:text-primary"
+              className={`relative text-base font-bold transition-all duration-300 group ${
+                isScrolled ? "text-white/80 hover:text-white" : "text-white/80 hover:text-white"
               }`}
             >
-              {item.icon}
-              <span className="ml-1.5">{item.name}</span>
+              <span className="relative z-10">{item.name}</span>
+              {/* Hover Underline Effect */}
+              <span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-[#ee9ca7] transition-all duration-300 group-hover:w-full"></span>
             </Link>
           ))}
-          <Link 
-             href="/reservation"
-             className="px-5 py-2 text-sm font-medium bg-primary text-white rounded-full hover:bg-primary/90 transition-all shadow-md hover:shadow-lg"
-          >
-            예약하기
-          </Link>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -88,7 +84,6 @@ export default function Header() {
                 className="flex items-center p-3 text-gray-700 hover:bg-secondary/50 hover:text-primary rounded-lg transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                {item.icon}
                 <span className="ml-3 font-medium">{item.name}</span>
               </Link>
             ))}
