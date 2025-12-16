@@ -70,9 +70,9 @@ export default function GardenPreviewSection() {
                   <Image
                     src={src}
                     alt={`Garden Preview ${index + 1}`}
-                    width={0}
-                    height={0}
-                    sizes="100vh"
+                    width={1200}
+                    height={600}
+                    sizes="(max-width: 768px) 600px, (max-width: 1024px) 800px, 1200px"
                     className="w-auto h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500 pointer-events-none" />
