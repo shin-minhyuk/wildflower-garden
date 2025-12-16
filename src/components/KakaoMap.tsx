@@ -69,14 +69,14 @@ export default function KakaoMap() {
 
             content.innerHTML = `
               <div class="flex justify-between items-start mb-3">
-                <h3 class="text-[#ee9ca7] font-bold text-lg tracking-wide">${markerTitle}</h3>
+                <h3 class="text-accent font-bold text-lg tracking-wide">${markerTitle}</h3>
                 <button id="close-overlay" class="text-gray-400 hover:text-white transition-colors">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                 </button>
               </div>
               <p class="text-xs text-gray-300 mb-5 leading-relaxed opacity-90">경기도 양평군 양평읍 경강로 1698</p>
               <div class="flex gap-2">
-                <a href="https://map.kakao.com/link/map/${markerTitle},${latitude},${longitude}" target="_blank" class="flex-1 bg-[#ee9ca7] text-white text-center py-2.5 rounded-lg text-xs font-bold hover:bg-[#ff8a9a] transition-colors shadow-md">큰지도보기</a>
+                <a href="https://map.kakao.com/link/map/${markerTitle},${latitude},${longitude}" target="_blank" class="flex-1 bg-accent text-white text-center py-2.5 rounded-lg text-xs font-bold hover:bg-[#ff8a9a] transition-colors shadow-md">큰지도보기</a>
                 <a href="https://map.kakao.com/link/to/${markerTitle},${latitude},${longitude}" target="_blank" class="flex-1 bg-[#4a4a4a] text-white text-center py-2.5 rounded-lg text-xs font-bold hover:bg-[#5a5a5a] transition-colors shadow-md">길찾기</a>
               </div>
               <!-- Arrow -->

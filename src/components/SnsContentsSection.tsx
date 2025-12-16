@@ -1,25 +1,8 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import { Youtube, Instagram } from "lucide-react";
 
 export default function SnsContentsSection() {
-  const instagramImages = [
-    "/image/gallary_2.webp",
-    "/image/gallary_3.webp",
-    "/image/gallary_4.webp",
-    "/image/gallary_5.webp",
-    "/image/gallary_6.webp",
-    "/image/gallary_7.webp",
-    "/image/gallary_2.webp",
-    "/image/gallary_3.webp",
-    "/image/gallary_4.webp",
-    "/image/gallary_5.webp",
-    "/image/gallary_6.webp",
-    "/image/gallary_7.webp",
-  ];
-
   return (
     <section className="relative w-full py-24 bg-black text-white overflow-hidden font-gowun-batang">
       {/* Background Image */}

@@ -39,7 +39,7 @@ export default function LocationGuideSection() {
                   href={kakaoMapUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-8 py-4 bg-[#FEE500] text-black font-bold rounded-full hover:bg-[#FEE500]/90 transition-all shadow-lg hover:shadow-xl flex items-center gap-2"
+                  className="px-8 py-4 bg-[#FEE500] text-black font-marcellus font-bold rounded-full hover:bg-[#FEE500]/90 transition-all shadow-lg hover:shadow-xl flex items-center gap-2"
                 >
                   <Navigation className="w-4 h-4" />
                   카카오맵으로 보기
@@ -48,7 +48,7 @@ export default function LocationGuideSection() {
                   href={googleMapUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-8 py-4 bg-white border border-gray-200 text-gray-700 font-bold rounded-full hover:bg-gray-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2"
+                  className="px-8 py-4 bg-white border border-gray-200 font-marcellus text-gray-700 font-bold rounded-full hover:bg-gray-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2"
                 >
                   <MapPin className="w-4 h-4" />
                   구글맵으로 보기

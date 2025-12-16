@@ -33,7 +33,7 @@ export default function HeroSection() {
             className="object-cover w-full h-full"
           />
         </video>
-        <div className="absolute inset-0 bg-black/50 backdrop-blur-[2px]" />
+        <div className="absolute inset-0 bg-black/55 backdrop-blur-[2px]" />
         <div className="absolute inset-0 bg-linear-to-b from-black/50 via-transparent to-transparent z-0" />
       </div>
 
@@ -43,8 +43,8 @@ export default function HeroSection() {
           <Image 
             src="/image/garden_logo4.webp" 
             alt="Wildflower Garden Logo" 
-            width={200} 
-            height={200} 
+            width={256} 
+            height={155} 
             priority
             className="w-auto h-auto" // Maintain aspect ratio
           />
@@ -60,7 +60,7 @@ export default function HeroSection() {
             >
               <span className="relative z-10">{item.name}</span>
               {/* Hover Glow/Underline Effect */}
-              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#ee9ca7] transition-all duration-300 group-hover:w-full shadow-[0_0_10px_#ee9ca7]"></span>
+              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-accent transition-all duration-300 group-hover:w-full shadow-[0_0_10px_#ee9ca7]"></span>
             </Link>
           ))}
         </nav>
