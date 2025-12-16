@@ -128,8 +128,8 @@ export default function KakaoMap() {
       
       {/* Error State */}
       {error && (
-         <div className="absolute inset-0 flex flex-col items-center justify-center bg-[#F4F1EA] z-0 text-[#2E5C3C]">
-             <span className="text-sm text-red-500 font-bold bg-white/80 p-2 rounded">{error}</span>
+         <div className="absolute inset-0 flex flex-col items-center justify-center z-0 text-[#2E5C3C]">
+             <span className="text-sm font-bold bg-white/80 p-2 rounded">{error}</span>
          </div>
       )}
     </div>
