@@ -19,7 +19,7 @@ export default function Header() {
 
   /* New Nav Items: 소개, 갤러리, 프로그램 보기, 예약하기, 인스타그램 */
   const navItems = [
-    { name: "소개", href: "/intro", external: false },
+    { name: "소개", href: "/about", external: false },
     { name: "갤러리", href: "/gallery", external: false },
     { name: "프로그램 보기", href: "/#programs", external: false },
     { name: "인스타그램", href: "https://www.instagram.com/wildflowergarden_yp", external: true },

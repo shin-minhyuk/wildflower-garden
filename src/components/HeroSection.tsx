@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function HeroSection() {
   /* New Nav Items matching Header */
   const navItems = [
-    { name: "소개", href: "/intro", external: false },
+    { name: "소개", href: "/about", external: false },
     { name: "갤러리", href: "/gallery", external: false },
     { name: "프로그램 보기", href: "/#programs", external: false },
     { name: "예약하기", href: "/reservation", external: false },
