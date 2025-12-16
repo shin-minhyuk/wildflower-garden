@@ -6,18 +6,18 @@ import { Youtube, Instagram } from "lucide-react";
 
 export default function SnsContentsSection() {
   const instagramImages = [
-    "/image/gallary_2.avif",
-    "/image/gallary_3.avif",
-    "/image/gallary_4.avif",
-    "/image/gallary_5.avif",
-    "/image/gallary_6.avif",
-    "/image/gallary_7.avif",
-    "/image/gallary_2.avif",
-    "/image/gallary_3.avif",
-    "/image/gallary_4.avif",
-    "/image/gallary_5.avif",
-    "/image/gallary_6.avif",
-    "/image/gallary_7.avif",
+    "/image/gallary_2.webp",
+    "/image/gallary_3.webp",
+    "/image/gallary_4.webp",
+    "/image/gallary_5.webp",
+    "/image/gallary_6.webp",
+    "/image/gallary_7.webp",
+    "/image/gallary_2.webp",
+    "/image/gallary_3.webp",
+    "/image/gallary_4.webp",
+    "/image/gallary_5.webp",
+    "/image/gallary_6.webp",
+    "/image/gallary_7.webp",
   ];
 
   return (
@@ -25,7 +25,7 @@ export default function SnsContentsSection() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/image/background_1.jpeg"
+          src="/image/background_1.webp"
           alt="SNS Background"
           fill
           className="object-cover blur-[2px] opacity-60"
@@ -64,7 +64,7 @@ export default function SnsContentsSection() {
             {/* Screen Content */}
             <div className="absolute inset-0 rounded-[32px] overflow-hidden bg-gray-900">
                <Image
-                src="/image/phone_1.jpg"
+                src="/image/phone_1.webp"
                 alt="Instagram Content 1"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -95,7 +95,7 @@ export default function SnsContentsSection() {
             {/* Screen Content */}
             <div className="absolute inset-0 rounded-[32px] overflow-hidden bg-white">
               <Image
-                src="/image/phone_2.jpg"
+                src="/image/phone_2.webp"
                 alt="Instagram Content 2"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"

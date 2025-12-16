@@ -13,7 +13,7 @@ export default function HealingProgramSection() {
         <div className="flex-1 relative group overflow-hidden shadow-2xl md:-translate-y-2 md:[clip-path:polygon(0_0,100%_0,95%_100%,0%_100%)]">
           <div className="absolute inset-0">
             <Image
-              src="/image/gallary_2.avif"
+              src="/image/gallary_2.webp"
               alt="Forest Healing"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -40,7 +40,7 @@ export default function HealingProgramSection() {
         <div className="flex-1 relative group overflow-hidden shadow-2xl md:translate-y-2 md:[clip-path:polygon(5%_0,100%_0,100%_100%,0%_100%)]">
           <div className="absolute inset-0">
             <Image
-              src="/image/gallary_3.avif"
+              src="/image/gallary_3.webp"
               alt="Tea Therapy"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"

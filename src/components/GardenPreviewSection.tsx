@@ -8,12 +8,12 @@ import "swiper/css/pagination";
 
 export default function GardenPreviewSection() {
   const images = [
-    "/image/gallary_2.avif",
-    "/image/gallary_3.avif",
-    "/image/gallary_4.avif",
-    "/image/gallary_5.avif",
-    "/image/gallary_6.avif",
-    "/image/gallary_7.avif",
+    "/image/gallary_2.webp",
+    "/image/gallary_3.webp",
+    "/image/gallary_4.webp",
+    "/image/gallary_5.webp",
+    "/image/gallary_6.webp",
+    "/image/gallary_7.webp",
   ];
 
   return (

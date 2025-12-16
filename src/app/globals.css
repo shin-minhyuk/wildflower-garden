@@ -3,11 +3,11 @@
 :root {
   --background: #FFFFFF;
   --foreground: #333333;
-  --primary: #5D7B6F; /* Sage Green */
+  --primary: #85A392; /* Lighter Sage Green */
   --primary-foreground: #FFFFFF;
-  --secondary: #F4F1EA; /* Warm Beige */
+  --secondary: #FAF8F5; /* Very Light Beige */
   --secondary-foreground: #2E5C3C;
-  --accent: #E6B8B8; /* Muted Pink */
+  --accent: #8db745; /* Soft Olive Green (Green Accent) */
   --accent-foreground: #FFFFFF;
   --muted: #999999;
   --border: #E5E5E5;

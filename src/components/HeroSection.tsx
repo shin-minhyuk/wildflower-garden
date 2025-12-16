@@ -41,7 +41,7 @@ export default function HeroSection() {
       <div className="hidden md:flex relative z-10 w-full pt-16 flex-col items-center animate-in fade-in slide-in-from-top-5 duration-1000">
         <Link href="/" className="mb-8 hover:opacity-90 transition-opacity">
           <Image 
-            src="/image/garden_logo4.png" 
+            src="/image/garden_logo4.webp" 
             alt="Wildflower Garden Logo" 
             width={200} 
             height={200} 

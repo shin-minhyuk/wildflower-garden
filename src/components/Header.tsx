@@ -39,7 +39,7 @@ export default function Header() {
           href="/" 
             className="text-xl md:text-2xl font-bold tracking-tight transition-colors duration-300 text-primary"
         >
-          <Image src="/image/garden_logo5.png" alt="logo" width={200} height={50} />
+          <Image src="/image/garden_logo5.webp" alt="logo" width={200} height={50} />
         </Link>
 
         {/* Desktop Navigation */}
@@ -63,11 +63,11 @@ export default function Header() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden p-2 text-gray-700 hover:text-primary transition-colors"
+          className="md:hidden p-2 transition-colors"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >
-          {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          {isMobileMenuOpen ? <X className="text-primary hover:text-primary w-6 h-6" /> : <Menu className="text-primary hover:text-primary w-6 h-6" />}
         </button>
       </div>
 
