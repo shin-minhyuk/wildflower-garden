@@ -2,15 +2,15 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { ArrowDown, Quote, History, Sprout, Heart, Users, Leaf } from "lucide-react";
+import { ArrowDown, Quote,  Sprout, Heart, Users, Leaf } from "lucide-react";
 
 // Components
-const IntroHero = () => {
+const AboutHero = () => {
   return (
     <div className="relative w-full h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden">
       <Image
         src="/image/background_1.webp"
-        alt="about Hero Background"
+        alt="About Hero Background"
         fill
         className="object-cover"
         priority
@@ -18,11 +18,11 @@ const IntroHero = () => {
       <div className="absolute inset-0 bg-black/40" />
       
       <div className="relative z-10 text-center text-white px-4">
-        <h1 className="text-3xl md:text-6xl font-marcellus font-bold mb-4 animate-in fade-in slide-in-from-bottom-4 duration-1000">
+        <h1 className="text-4xl md:text-6xl font-gowun-batang font-bold mb-4 animate-in fade-in slide-in-from-bottom-4 duration-1000">
            자연이 주는 온전한 휴식
         </h1>
         <p className="text-lg md:text-xl font-gowun-batang opacity-90 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-200">
-          들꽃 체험 학습장 소개
+          “자연 속에서 웃고,<br className="md:hidden" /> 흙을 만지며 자라는 시간”
         </p>
       </div>
 
@@ -159,12 +159,12 @@ const HistoryTab = () => {
 };
 
 
-export default function IntroPage() {
+export default function AboutPage() {
   const [activeTab, setActiveTab] = useState<"philosophy" | "history">("philosophy");
 
   return (
     <main className="w-full min-h-screen bg-[#FAF8F5]">
-      <IntroHero />
+      <AboutHero />
 
       {/* Tab Navigation - Sticky */}
       <div className="sticky top-0 z-40 bg-[#FAF8F5]/95 backdrop-blur-md border-b border-[#5D7B6F]/20">
