@@ -22,6 +22,14 @@ export default function Header() {
     { name: "소개", href: "/about", external: false },
     { name: "갤러리", href: "/gallery", external: false },
     { name: "프로그램 보기", href: "/programs", external: false },
+    { name: "예약하기", href: "https://open.kakao.com/o/sbcMpR6h", external: true },
+    { name: "인스타그램", href: "https://www.instagram.com/wildflowergarden_yp", external: true },
+  ];
+
+    const navItemsMobile = [
+    { name: "소개", href: "/about", external: false },
+    { name: "갤러리", href: "/gallery", external: false },
+    { name: "프로그램 보기", href: "/programs", external: false },
     { name: "인스타그램", href: "https://www.instagram.com/wildflowergarden_yp", external: true },
   ];
 
@@ -75,7 +83,7 @@ export default function Header() {
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-md shadow-lg border-t border-gray-100 animate-in slide-in-from-top-2">
           <div className="flex flex-col p-4 space-y-2">
-            {navItems.map((item) => (
+            {navItemsMobile.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
@@ -88,7 +96,9 @@ export default function Header() {
               </Link>
             ))}
              <Link
-                href="/reservation"
+                href="https://open.kakao.com/o/sbcMpR6h"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-center p-3 mt-2 text-white bg-accent rounded-lg font-medium shadow-sm"
                 onClick={() => setIsMobileMenuOpen(false)}
               >

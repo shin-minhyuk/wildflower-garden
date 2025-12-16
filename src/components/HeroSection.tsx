@@ -9,7 +9,7 @@ export default function HeroSection() {
     { name: "소개", href: "/about", external: false },
     { name: "갤러리", href: "/gallery", external: false },
     { name: "프로그램 보기", href: "/programs", external: false },
-    { name: "예약하기", href: "/reservation", external: false },
+    { name: "예약하기", href: "https://open.kakao.com/o/sbcMpR6h", external: true },
     { name: "인스타그램", href: "https://www.instagram.com/wildflowergarden_yp", external: true },
   ];
 
