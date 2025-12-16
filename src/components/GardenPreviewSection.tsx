@@ -18,9 +18,9 @@ export default function GardenPreviewSection() {
 
   return (
     <section className="w-full py-20 bg-background overflow-hidden font-gowun-batang">
-      <div className="container mx-auto px-4 max-w-7xl">
+      <div className="px-4">
         {/* Title Section */}
-        <div className="flex flex-col md:flex-row items-baseline mb-12 gap-4">
+        <div className="container mx-auto px-4 max-w-7xl flex flex-col md:flex-row items-baseline mb-12 gap-4">
           <div className="flex items-center gap-2 whitespace-nowrap">
             {/* Diamond Icon */}
             <div className="w-3 h-3 bg-accent rotate-45" />
@@ -50,10 +50,7 @@ export default function GardenPreviewSection() {
               delay: 3000,
               disableOnInteraction: false,
             }}
-            pagination={{
-              clickable: true,
-              dynamicBullets: true,
-            }}
+            pagination={false}
             breakpoints={{
               640: {
                 spaceBetween: 30,
