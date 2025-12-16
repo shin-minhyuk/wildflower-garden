@@ -47,7 +47,8 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
-        <FixedBookingButton />
+        {/* TODO: 카톡 비즈 심사 때문에 잠시 주석 */}
+        {/* <FixedBookingButton /> */} 
       </body>
     </html>
   );
