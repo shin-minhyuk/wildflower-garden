@@ -79,28 +79,28 @@ const ProgramList = () => {
             concept: "‘있는 그대로의 나’를 받아들이는 시간",
             desc: "아이들은 나리꽃을 관찰하고 표현하며 자신의 감정과 생각을 자연스럽게 이야기합니다. 비교가 아닌 존중, 평가가 아닌 공감을 배웁니다.",
             effects: ["자존감 향상", "감정 표현", "정서적 공감"],
-            image: "/image/gallary_3.webp"
+            image: "/image/program_2.jpg"
         },
         {
             title: "텃밭 가꾸기",
             concept: "흙을 만지고, 기다리고, 함께 키우는 경험",
             desc: "씨앗을 심고 작물이 자라는 과정을 직접 경험하며 아이들은 인내와 책임감을 몸으로 배웁니다. 자연스러운 신체 활동도 함께 이루어집니다.",
             effects: ["소근육·대근육 발달", "책임감", "성취감"],
-            image: "/image/gallary_5.webp"
+            image: "/image/program_1.jpg"
         },
         {
             title: "식물 친구 관찰하기",
             concept: "식물을 ‘대상’이 아닌 ‘친구’로 만나는 시간",
             desc: "식물의 변화와 특징을 관찰하며 아이들은 타인의 감정과 상태를 이해하는 연습을 합니다. 차분한 집중과 공감의 시간이 흐릅니다.",
             effects: ["집중력 향상", "공감 능력", "감정 조절"],
-            image: "/image/gallary_2.webp"
+            image: "/image/program_3.jpg"
         },
         {
             title: "반려화분 만들기",
             concept: "나만의 식물 친구를 키우는 일상 속 치유",
             desc: "아이들은 화분을 만들고 돌보며 하나의 생명과 함께하는 책임과 애정을 배웁니다. 일상 속에서도 자연과의 연결이 이어집니다.",
             effects: ["정서적 안정", "애착 형성", "자기 돌봄"],
-            image: "/image/gallary_6.webp"
+            image: "/image/program_4.jpg"
         }
     ];
 
@@ -113,14 +113,14 @@ const ProgramList = () => {
                         className="group bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col h-full"
                     >
                         {/* Image Area */}
-                        <div className="relative h-64 w-full overflow-hidden">
+                        <div className="relative h-80 w-full overflow-hidden">
                             <Image
                                 src={prog.image}
                                 alt={prog.title}
                                 fill
                                 className="object-cover transition-transform duration-700 group-hover:scale-110"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60" />
+                            <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent opacity-60" />
                             <div className="absolute bottom-6 left-6 text-white">
                                 <h3 className="text-2xl font-bold">{prog.title}</h3>
                             </div>
