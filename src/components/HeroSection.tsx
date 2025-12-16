@@ -8,7 +8,7 @@ export default function HeroSection() {
   const navItems = [
     { name: "소개", href: "/about", external: false },
     { name: "갤러리", href: "/gallery", external: false },
-    { name: "프로그램 보기", href: "/#programs", external: false },
+    { name: "프로그램 보기", href: "/programs", external: false },
     { name: "예약하기", href: "/reservation", external: false },
     { name: "인스타그램", href: "https://www.instagram.com/wildflowergarden_yp", external: true },
   ];
@@ -17,23 +17,14 @@ export default function HeroSection() {
     <section className="relative h-screen w-full overflow-hidden flex flex-col items-center">
       {/* Background Video */}
       <div className="absolute inset-0 z-0">
-         <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="object-cover w-full h-full"
-          poster="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=2664&auto=format&fit=crop"
-        >
-          <source src="https://videos.pexels.com/video-files/5502663/5502663-uhd_2560_1440_30fps.mp4" type="video/mp4" />
-          {/* Fallback image if video fails or blocked */}
-          <img 
-            src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=2664&auto=format&fit=crop" 
+          <Image 
+            src="/image/main_1.jpg" 
             alt="Wildflower Garden" 
+            fill
             className="object-cover w-full h-full"
+            priority
           />
-        </video>
-        <div className="absolute inset-0 bg-black/55 backdrop-blur-[2px]" />
+        <div className="absolute inset-0 bg-black/55 backdrop-blur-[1px]" />
         <div className="absolute inset-0 bg-linear-to-b from-black/50 via-transparent to-transparent z-0" />
       </div>
 

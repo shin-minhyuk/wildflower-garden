@@ -21,7 +21,7 @@ export default function Header() {
   const navItems = [
     { name: "소개", href: "/about", external: false },
     { name: "갤러리", href: "/gallery", external: false },
-    { name: "프로그램 보기", href: "/#programs", external: false },
+    { name: "프로그램 보기", href: "/programs", external: false },
     { name: "인스타그램", href: "https://www.instagram.com/wildflowergarden_yp", external: true },
   ];
 
