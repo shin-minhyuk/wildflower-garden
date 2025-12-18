@@ -11,7 +11,6 @@ export default function GardenPreviewSection() {
     "/image/gallary_2.webp",
     "/image/gallary_3.webp",
     "/image/gallary_4.webp",
-    "/image/gallary_5.webp",
     "/image/gallary_6.webp",
     "/image/gallary_7.webp",
   ];
