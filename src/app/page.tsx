@@ -12,9 +12,6 @@ export default function Home() {
       <GardenPreviewSection />
       <SnsContentsSection />
       <LocationGuideSection />
-      {/* LocationGuideSection placeholder */}
-      {/* OperatingHoursSection placeholder */}
-      {/* PhoneConsultationSection placeholder */}
     </div>
   );
 }
