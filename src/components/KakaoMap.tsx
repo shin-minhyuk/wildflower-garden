@@ -11,8 +11,8 @@ declare global {
 export default function KakaoMap() {
   const mapRef = useRef<HTMLDivElement>(null);
   // Default coordinates for "경기도 양평군 양평읍 경강로 1698"
-  const latitude = 37.493976;
-  const longitude = 127.487449;
+  const latitude = 37.50226;
+  const longitude = 127.46866;
   const markerTitle = "들꽃치유정원";
 
   const [error, setError] = useState<string | null>(null);
@@ -76,7 +76,7 @@ export default function KakaoMap() {
               </div>
               <p class="text-xs text-gray-300 mb-5 leading-relaxed opacity-90">경기도 양평군 양평읍 경강로 1698</p>
               <div class="flex gap-2">
-                <a href="https://map.kakao.com/link/map/${markerTitle},${latitude},${longitude}" target="_blank" class="flex-1 bg-accent text-white text-center py-2.5 rounded-lg text-xs font-bold hover:bg-[#ff8a9a] transition-colors shadow-md">큰지도보기</a>
+                <a href="https://map.kakao.com/link/map/${markerTitle},${latitude},${longitude}" target="_blank" class="flex-1 bg-accent text-white text-center py-2.5 rounded-lg text-xs font-bold hover:bg-accent/90 transition-colors shadow-md">큰지도보기</a>
                 <a href="https://map.kakao.com/link/to/${markerTitle},${latitude},${longitude}" target="_blank" class="flex-1 bg-[#4a4a4a] text-white text-center py-2.5 rounded-lg text-xs font-bold hover:bg-[#5a5a5a] transition-colors shadow-md">길찾기</a>
               </div>
               <!-- Arrow -->
