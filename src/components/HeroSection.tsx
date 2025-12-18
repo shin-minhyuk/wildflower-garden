@@ -58,7 +58,7 @@ export default function HeroSection() {
       </div>
 
       {/* Center Content */}
-      <div className="absolute left-1/2 top-1/2 flex w-full -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-2 px-5 text-white z-10">
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:relative md:left-auto md:top-auto md:translate-x-0 md:translate-y-0 md:mt-16 flex w-full flex-col items-center gap-2 px-5 text-white z-10">
         <p className="text-2xl font-semibold tracking-wide opacity-90 font-marcellus">The Beauty in Nature</p>
         <div className="relative w-[400px] md:w-[538px] h-[20px]">
              <Image
