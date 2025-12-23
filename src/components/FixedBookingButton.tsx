@@ -1,10 +1,13 @@
+import { EXTERNAL_LINKS } from "@/constants/links";
 import Link from "next/link";
 
 export default function FixedBookingButton() {
   return (
     <div className="fixed bottom-3 left-1/2 -translate-x-1/2 z-50 w-full max-w-md px-4">
       <Link
-        href="#"
+        href={EXTERNAL_LINKS.KAKAO_OPEN_CHAT}
+        target="_blank"
+        rel="noopener noreferrer"
         className="flex items-center justify-center gap-2 w-full bg-[#FEE500] text-[#371D1E] py-4 px-6 rounded-xl font-bold text-base shadow-lg hover:bg-[#FDD835] transition-all duration-300 hover:shadow-xl"
       >
         <svg

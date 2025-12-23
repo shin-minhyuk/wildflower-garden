@@ -3,6 +3,7 @@ import HealingProgramSection from "@/components/HealingProgramSection";
 import GardenPreviewSection from "@/components/GardenPreviewSection";
 import SnsContentsSection from "@/components/SnsContentsSection";
 import LocationGuideSection from "@/components/LocationGuideSection";
+import FixedBookingButton from "@/components/FixedBookingButton";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <GardenPreviewSection />
       <SnsContentsSection />
       <LocationGuideSection />
+      <FixedBookingButton />
     </div>
   );
 }
