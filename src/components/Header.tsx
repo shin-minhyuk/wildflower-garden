@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X, Instagram, Image as ImageIcon } from "lucide-react";
 import Image from "next/image";
+import { EXTERNAL_LINKS } from "@/constants/links";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -22,15 +23,15 @@ export default function Header() {
     { name: "소개", href: "/about", external: false },
     { name: "갤러리", href: "/gallery", external: false },
     { name: "프로그램 보기", href: "/programs", external: false },
-    { name: "예약하기", href: "https://open.kakao.com/o/sbcMpR6h", external: true },
-    { name: "인스타그램", href: "https://www.instagram.com/wildflowergarden_yp", external: true },
+    { name: "예약하기", href: EXTERNAL_LINKS.KAKAO_OPEN_CHAT, external: true },
+    { name: "인스타그램", href: EXTERNAL_LINKS.INSTAGRAM, external: true },
   ];
 
     const navItemsMobile = [
     { name: "소개", href: "/about", external: false },
     { name: "갤러리", href: "/gallery", external: false },
     { name: "프로그램 보기", href: "/programs", external: false },
-    { name: "인스타그램", href: "https://www.instagram.com/wildflowergarden_yp", external: true },
+    { name: "인스타그램", href: EXTERNAL_LINKS.INSTAGRAM, external: true },
   ];
 
   return (
@@ -96,7 +97,7 @@ export default function Header() {
               </Link>
             ))}
              <Link
-                href="https://open.kakao.com/o/sbcMpR6h"
+                href={EXTERNAL_LINKS.KAKAO_OPEN_CHAT}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center p-3 mt-2 text-white bg-accent rounded-lg font-medium shadow-sm"

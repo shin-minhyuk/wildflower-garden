@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Youtube, Instagram } from "lucide-react";
+import { EXTERNAL_LINKS } from "@/constants/links";
 
 export default function SnsContentsSection() {
   return (
@@ -35,7 +36,7 @@ export default function SnsContentsSection() {
           
           {/* Left Phone (phone_1) */}
           <Link
-            href="https://www.instagram.com/wildflowergarden_yp"
+            href={EXTERNAL_LINKS.INSTAGRAM}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="INSTAGRAM"
@@ -66,7 +67,7 @@ export default function SnsContentsSection() {
 
           {/* Right Phone (phone_2) */}
           <Link
-            href="https://www.instagram.com/wildflowergarden_yp"
+            href={EXTERNAL_LINKS.INSTAGRAM}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="INSTAGRAM"

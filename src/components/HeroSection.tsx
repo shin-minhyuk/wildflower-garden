@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { EXTERNAL_LINKS } from "@/constants/links";
 
 export default function HeroSection() {
   /* New Nav Items matching Header */
@@ -9,8 +10,8 @@ export default function HeroSection() {
     { name: "소개", href: "/about", external: false },
     { name: "갤러리", href: "/gallery", external: false },
     { name: "프로그램 보기", href: "/programs", external: false },
-    { name: "예약하기", href: "https://open.kakao.com/o/sbcMpR6h", external: true },
-    { name: "인스타그램", href: "https://www.instagram.com/wildflowergarden_yp", external: true },
+    { name: "예약하기", href: EXTERNAL_LINKS.KAKAO_OPEN_CHAT, external: true },
+    { name: "인스타그램", href: EXTERNAL_LINKS.INSTAGRAM, external: true },
   ];
 
   return (
